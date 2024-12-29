@@ -11,7 +11,10 @@
     "Pricing",
     "Contact"
   ],
-  "heroText": "We make it easy to bring your ideas to life. By focusing on simplicity, we help automate workflows, create resources, manage tasks, and distribute content—giving your business or personal projects the tools they need to succeed.",
+  "hero": {
+    "title": "We make it easy to bring your ideas to life.",
+    "description": "By focusing on simplicity, we help automate workflows, create resources, manage tasks, and distribute content—giving your business or personal projects the tools they need to succeed." 
+  },
   "keywords": [
     "digital connections",
     "online networking",

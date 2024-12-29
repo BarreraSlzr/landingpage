@@ -19,15 +19,15 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  title: `${content.companyName} | ${content.heroText}`,
-  description: `Discover ${content.companyName}: ${content.heroText}. Located at ${content.companyInfo.address1}, ${content.companyInfo.address2}.`,
+  title: `${content.companyName} | ${content.hero.title}`,
+  description: `Discover ${content.companyName}: ${content.hero.description}. Located at ${content.companyInfo.address2}. Making ${content.companyInfo.address1}.`,
   keywords: `${content.companyName}, internet friends, ${content.navigation.join(', ')}, ${content.keywords.join(', ')}`,
   // viewport: 'width=device-width, initial-scale=1.0',
   icons: {
     icon: '/icon.png',
   },
   openGraph: {
-    title: `${content.companyName} | ${content.heroText}`,
+    title: `${content.companyName} | ${content.hero.description}`,
     description: `Learn more about ${content.companyName}.`,
     url: 'https://www.internetfriends.xyz',
     images: [
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${content.companyName} | ${content.heroText}`,
-    description: `Discover ${content.companyName}: ${content.heroText}.`,
+    title: `${content.companyName} | ${content.hero.title}`,
+    description: `Discover ${content.companyName}: ${content.hero.description}.`,
     images: ['/600x600.jpg'],
   },
 };

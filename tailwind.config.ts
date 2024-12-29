@@ -22,6 +22,9 @@ const config: Config = {
           DEFAULT: '#40E0D0',
           dark: '#2CB3A5',
         },
+        foreground: {
+          DEFAULT: 'var(--foreground)'
+        },
         'brand-blue': {
           100: 'var(--brand-blue-100)',
           200: 'var(--brand-blue-200)',
