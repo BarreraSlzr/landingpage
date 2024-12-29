@@ -52,9 +52,8 @@ const NotFoundPage: React.FC = () => {
     <main className="min-h-screen bg-[#f5f5f5]">
       {/* Header */}
       <header className="flex items-center justify-between p-6 md:p-8 ">
-        {/* <div className="absolute -inset-0.5 bg-gradient-to-br from-[#FF1B6B] via-[#FFA07A] to-[#40E0D0] rounded-lg "/> */}
         <div className="flex items-center gap-2">
-          <div className="overflow-hidden flex items-center h-10 w-32 rounded bg-gradient-to-br from-[#FF1B6B] via-[#FFA07A] to-[#40E0D0]">
+          <div className="overflow-hidden flex items-center h-10 w-32 rounded bg-gradient-to-br from-orange-500 to-pink-500">
             <Image
               className="select-none pointer-events-none"
               alt={`${content.companyName}.xyz`} width={600} height={600} src="/600x600.jpg" />

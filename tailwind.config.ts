@@ -22,6 +22,17 @@ const config: Config = {
           DEFAULT: '#40E0D0',
           dark: '#2CB3A5',
         },
+        'brand-blue': {
+          100: 'var(--brand-blue-100)',
+          200: 'var(--brand-blue-200)',
+          300: 'var(--brand-blue-300)',
+          400: 'var(--brand-blue-400)',
+          500: 'var(--brand-blue-500)',
+          600: 'var(--brand-blue-600)',
+          700: 'var(--brand-blue-700)',
+          800: 'var(--brand-blue-800)',
+          900: 'var(--brand-blue-900)',
+        },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
