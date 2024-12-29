@@ -15,6 +15,19 @@
   --brand-blue-700: #2C54D7;
   --brand-blue-800: #1E3A8A;
   --brand-blue-900: #0F1D45;
+  
+  --background: #0a0a0a;
+  --foreground: #f5f5f5;
+  --text: 255, 255, 255;
+  --brand-blue-100: #0F1D45;
+  --brand-blue-200: #1E3A8A;
+  --brand-blue-300: #2C54D7;
+  --brand-blue-400: #4B6DDC;
+  --brand-blue-500: #6A86E1;
+  --brand-blue-600: #899FE6;
+  --brand-blue-700: #A8B8EB;
+  --brand-blue-800: #C7D1F0;
+  --brand-blue-900: #E6EAF5;
 }
 
 [data-mode="dark"] {
