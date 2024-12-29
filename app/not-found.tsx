@@ -5,6 +5,7 @@ import Header from './components/Header';
 import MainNavigation from './components/MainNavigation';
 import SocialLinks from './components/SocialLinks';
 import HeroText from './components/HeroText';
+import CompanyInfo from './components/CompanyInfo';
 
 
 const messages = [
@@ -50,12 +51,12 @@ export default function NotFoundPage() {
   const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
   return (
-    <main className="min-h-screen bg-brand-blue-800">
+    <main>
       {/* Header */}
       <Header/>
 
       <HeroText>
-          <h1 className="text-4xl font-bold mb-4">{randomMessage.main}</h1>
+          <h1 className="text-4xl font-bold mb-4 font-mono">404 - {randomMessage.main}</h1>
           <p className="text-lg mb-6">{randomMessage.subtitle}</p>
           <Link 
             href="/" 
@@ -70,6 +71,7 @@ export default function NotFoundPage() {
 
       {/* Social Links */}
       <SocialLinks/>
+      <CompanyInfo/>
     </main>
   );
 };

@@ -6,7 +6,7 @@ import SocialLinks from "./components/SocialLinks";
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-brand-blue-800 text-brand-blue-100">
+    <main>
       <Header />
       <CompanyInfo />
       <MainNavigation />
