@@ -9,7 +9,7 @@ export default async function CompanyInfo() {
   const address = isFromMexico ? 'Working Remote 🌐' : content.companyInfo.address2
 
   return (
-    <section className="px-6 md:px-8 pb-12 pt-2">
+    <section className="px-6 md:px-8 pb-12 pt-2 bg-brand-blue-800">
       <div className="flex flex-col">
         <h1 className="text-lg font-medium h-5">{content.companyInfo.title}</h1>
         <p>{content.companyInfo.address1}</p>

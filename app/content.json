@@ -33,5 +33,18 @@
     "business automation",
     "digital resources",
     "project success tools"
-  ]
+  ],
+  "pricing": {
+    "title": "Affordable Plans for Every Need",
+    "description": "Choose a pricing plan that aligns with your goals. From small businesses to large enterprises, we have tailored solutions to help you grow and succeed."
+  },
+  "contact": {
+    "title": "Get in Touch with Us",
+    "description": "Have questions or need support? We’re here to help.\nReach out to us to discuss your next project or any inquiries."
+  },
+  "samples": {
+    "title": "Discover Our Public Work Samples",
+    "description": "Explore a showcase of our creativity, problem-solving, and technical expertise.\nDive into projects that bring ideas to life, automate tasks, and deliver impactful business solutions tailored to real-world needs."
+  }
+  
 }
