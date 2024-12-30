@@ -4,7 +4,7 @@ import HeroText from "@/app/components/HeroText";
 import MainNavigation from "@/app/components/MainNavigation";
 import SocialLinks from "@/app/components/SocialLinks";
 import content from '@/app/content.json';
-import engagementOptions from "@/libs/engagementOptions";
+import engagementOptions from "@/lib/engagementOptions";
 import { Badge } from "@/components/ui/badge";
 
 export default function Page() {
@@ -36,7 +36,7 @@ export default function Page() {
                                         {option.price}
                                     </span>
                                 </span>
-                                <span className="flex flex-row items-center text-right">
+                                <span className="flex flex-row items-center">
                                     {option.short_description}
                                 </span>
                             </div>

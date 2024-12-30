@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { platformNames } from '@/libs/platformURLs';
+import { platformNames } from '@/lib/platformURLs';
 
 export default function SocialLinks() {
   return (

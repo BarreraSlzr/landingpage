@@ -1,5 +1,5 @@
-import { platformUrls } from '@/libs/platformURLs'
-import { log } from '@/libs/utils/logger'
+import { platformUrls } from '@/lib/platformURLs'
+import { log } from '@/lib/utils/logger'
 import { redirect } from 'next/navigation'
 
 type ParamProps = {

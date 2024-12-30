@@ -1,12 +1,12 @@
 import { headers } from 'next/headers';
 import content from '../content.json';
+import { latinAmericanCountries } from '@/lib/latinAmericanCountries';
 
 export default async function CompanyInfo() {
   const headersList = await headers()
   const country = headersList.get('X-Vercel-IP-Country') || 'default'
-  const isFromMexico = country.toLowerCase() === 'mx'
-
-  const address = isFromMexico ? 'Working Remote 🌐' 
+  const isFromLatinAmerica = latinAmericanCountries.includes(country.toUpperCase())
+  const address = isFromLatinAmerica ? 'Working Remote 🌐' 
   : content.companyInfo.address2
 
   return (
