@@ -11,7 +11,7 @@ export default function Header() {
             <Link href='/'>
                 <div className="flex items-center gap-2">
                     <div className="relative overflow-hidden flex items-center h-10 w-32 rounded bg-gradient-to-br from-orange-500 to-pink-500">
-                        <NoiseFilterDiv className="absolute  animate-tilt scale-200 inset-0 opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt mix-blend-saturation"
+                        <NoiseFilterDiv className="absolute scale-200 inset-0 opacity-75 group-hover:opacity-100 transition duration-3000 group-hover:duration-200 animate-tilt mix-blend-saturation"
                             overlayBlendMode='hue' />
                         <Image
                             className="select-none pointer-events-none"

@@ -16,7 +16,7 @@ export default function NoiseFilterDiv({
         className={`absolute h-[100%] w-[100%] min-w-fit min-h-fit bg-cover bg-no-repeat ${className}`}
         style={{
           backgroundImage: `
-          url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.125' numOctaves='100' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
+          url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='100' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
           ${gradient}
         `,
           backgroundBlendMode: overlayBlendMode,
