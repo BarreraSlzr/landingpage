@@ -31,6 +31,11 @@ const projects = [
         description: 'Website, MVP'
     }, 
     {
+        title: 'Curriculum Vitae', 
+        href: 'https://barreraslzr.internetfriends.xyz/',
+        description: 'Website'
+    }, 
+    {
         title: 'SuPanchaMadre Restaurant',
         href: 'https://supanchamadre.internetfriends.xyz/',
         description: 'Website, MVP'

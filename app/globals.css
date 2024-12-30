@@ -100,7 +100,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-brand-blue-800 text-brand-blue-200;
+    @apply bg-brand-blue-900 text-brand-blue-200;
   }
 }
 

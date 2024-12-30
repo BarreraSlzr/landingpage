@@ -27,18 +27,18 @@ export default function Page() {
                             <span className="font-mono font-bold mb-auto">
                                 0{index + 1}
                             </span>
-                            <div className="flex flex-col">
-                            <span className="flex-grow flex flex-row gap-2">
-                                <Badge variant='outline' className="mb-auto text-nowrap border-2 border-brand-blue-800 text-brand-blue">
-                                {option.duration}
-                                </Badge>
-                                <span className="font-mono">
-                                {option.price}
+                            <div className="flex flex-col flex-grow">
+                                <span className="flex-grow flex flex-row gap-2 justify-between">
+                                    <Badge variant='outline' className="text-nowrap border-2 border-brand-blue-800 text-brand-blue">
+                                        {option.duration}
+                                    </Badge>
+                                    <span className="font-mono font-bold">
+                                        {option.price}
+                                    </span>
                                 </span>
-                            </span>
-                            <span className="flex flex-row items-center text-right">
-                                {option.short_description}
-                            </span>
+                                <span className="flex flex-row items-center text-right">
+                                    {option.short_description}
+                                </span>
                             </div>
                         </div>
                     ))}
