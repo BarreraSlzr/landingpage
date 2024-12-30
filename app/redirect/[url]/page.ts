@@ -3,19 +3,23 @@ import { log } from '@/libs/utils/logger'
 import { redirect } from 'next/navigation'
 
 type ParamProps = {
-  platform: string
+  url: string
 }
 
 export default async function RedirectPage(props: { params: Promise<ParamProps> }) {
   const params = await props.params;
-  const url = platformUrls[params.platform.toLowerCase()]
+  const url = platformUrls[params.url.toLowerCase()]
 
   if (url) {
-    log(`Redirecting to ${params.platform}`, 'info', { url })
+    log(`Redirecting to ${params.url}`, 'info', { url })
     redirect(url)
   } else {
-    log(`Invalid platform: ${params.platform}`, 'warn')
-    redirect('/')  // Redirect to homepage if platform is not found
+    log(`Invalid url: ${params.url}`, 'warn')
+    if( params.url ){
+      redirect(`https://${params.url}`)
+    } else {
+      redirect('/')  // Redirect to homepage if platform is not found
+    }
   }
 }
 

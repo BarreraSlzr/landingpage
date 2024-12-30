@@ -10,21 +10,23 @@ const DefaultHero = () => (
         <h1 className="font-bold">{content.hero.title}</h1>
         <p className="text-lg mb-6 font-mono">{content.hero.description}</p>
     </div>
-
 )
 
-export default function HeroText({ children = <DefaultHero /> }: PropsWithChildren) {
+type Props = {
+    className?: string,
+}
+
+export default function HeroText({ children = <DefaultHero /> }: PropsWithChildren<Props>) {
     return (
-        <section className="relative min-h-[60vh]">
-            <NoiseFilterDiv className="absolute inset-0 bg-cover bg-no-repeat">
-                <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, ease: 'easeOut' }}
-                    className="relative px-6 md:px-8 py-12 max-w-4xl text-white">
-                    {children}
-                </motion.div>
-            </NoiseFilterDiv>
+        <section className={`relative min-h-[60vh]`}>
+            <NoiseFilterDiv/>
+            <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, ease: 'easeOut' }}
+                className="relative px-6 md:px-8 py-12 max-w-4xl text-white">
+                {children}
+            </motion.div>
         </section>
     );
 }
