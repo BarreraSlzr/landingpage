@@ -34,7 +34,7 @@
     --secondary: #FFA07A;
     --tertiatry: #40E0D0;
     --foreground: #f5f5f5;
-    --text: 255, 255, 255;
+    --text: #0F1D45;
     --brand-blue-100: #0F1D45;
     --brand-blue-200: #1E3A8A;
     --brand-blue-300: #2C54D7;
@@ -75,7 +75,7 @@
     --primary: #D1004F;
     --secondary: #E67E5C;
     --tertiatry: #2CB3A5;
-    --text: 255, 255, 255;
+    --text: #0F1D45;
     --brand-blue-100: #0F1D45;
     --brand-blue-200: #1E3A8A;
     --brand-blue-300: #2C54D7;
@@ -94,13 +94,16 @@
   }
 }
 
-
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-brand-blue-900 text-brand-blue-200;
+    label {
+      @apply text-brand-blue-200;
+    }
   }
 }
+
 
