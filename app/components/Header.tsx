@@ -7,11 +7,11 @@ import NoiseFilterDiv from './NoiseFilterDiv';
 
 export default function Header() {
     return (
-        <header className="flex items-center justify-between p-6 md:p-8 rounded-t-lg bg-foreground border-2 border-brand-blue-800">
+        <header className="flex items-center justify-between sm:p-6 p-2 py-4 md:p-8  rounded-t-lg bg-foreground border-2 border-brand-blue-800">
             <Link href='/'>
                 <div className="flex items-center gap-2">
                     <div className="relative overflow-hidden flex items-center h-10 w-32 rounded bg-gradient-to-br from-orange-500 to-pink-500">
-                        <NoiseFilterDiv className="absolute scale-200 inset-0 opacity-75 group-hover:opacity-100 transition duration-3000 group-hover:duration-200 animate-tilt mix-blend-saturation"
+                        <NoiseFilterDiv className="scale-400 inset-0 opacity-75 hover:opacity-100 transition duration-2000 hover:duration-200 animate-tilt mix-blend-saturation"
                             overlayBlendMode='hue' />
                         <Image
                             className="select-none pointer-events-none"

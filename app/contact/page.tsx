@@ -27,18 +27,15 @@ export default function Page() {
                 <h1 className="text-5xl font-bold sm:pb-6 pb-4 md:pb-8">
                     {content.contact.title}
                 </h1>
-                <div className="sm:p-6 p-4 md:p-8 flex flex-col bg-foreground text-brand-blue-100">
+                <div className="sm:p-6 p-2 py-4 md:p-8   flex flex-col bg-foreground text-brand-blue-100">
                     <p className="text-lg mb-2 max-w-2xl">
                         {content.contact.description}
                     </p>
                 </div>
-                <div className="sm:p-6 p-4 md:p-8 pt-0 flex flex-col bg-foreground">
+                <div className="sm:p-6 p-2 py-4 md:p-8   pt-0 flex flex-col bg-foreground">
                     {contact.map((c, index) => (
                         <Link key={index} href={c.href} title={c.title}
                             className="flex items-center sm:gap-4 gap-2 hover:opacity-70 transition-opacity p-2 border-b-2 border-brand-blue-800 text-brand-blue-100">
-                            <span className="font-mono font-bold mb-auto">
-                                0{index + 1}
-                            </span>
                             <span className="flex-grow">
                                 {c.description}
                             </span>
@@ -50,9 +47,6 @@ export default function Page() {
                     ))}
                     <div
                         className="flex items-center sm:gap-4 gap-2 p-2 border-brand-blue-800 text-brand-blue-100">
-                        <span className="font-mono font-bold mb-auto">
-                            0{contact.length + 1}
-                        </span>
                         <div className="flex-grow flex flex-col sm:pb-6 pb-4 md:pb-8">
                             <p className="text-lg mb-2 max-w-2xl">Share Your Vision and Watch It Come to Life!</p>
                             <ContactForm />

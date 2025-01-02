@@ -45,6 +45,9 @@
   "samples": {
     "title": "Discover Our Public Work Samples",
     "description": "Explore a showcase of our creativity, problem-solving, and technical expertise.\nDive into projects that bring ideas to life, automate tasks, and deliver impactful business solutions tailored to real-world needs."
+  },
+  "siteConfig": {
+    "url": "https://internetfriends.xyz",
+    "twitterHandle": "@friends_xyz"
   }
-  
 }

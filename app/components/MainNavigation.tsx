@@ -4,7 +4,7 @@ import content from '../content.json';
 
 export default function MainNavigation() {
   return (
-    <nav className="px-6 md:px-8 flex flex-wrap gap-8 border-2 border-b-0 border-brand-blue-800 bg-foreground" aria-label="Main Navigation">
+    <nav className="sm:px-6 px-2 md:px-8 flex flex-wrap gap-8 border-2 border-b-0 border-brand-blue-800 bg-foreground" aria-label="Main Navigation">
       {content.navigation.map((item) => (
         <Link
           key={item}
