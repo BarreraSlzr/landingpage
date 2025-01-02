@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       { url: '/icon/32', sizes: '32x32', type: 'image/png' },
       { url: '/icon/48', sizes: '48x48', type: 'image/png' },
       { url: '/icon/72', sizes: '72x72', type: 'image/png' },
-      { url: '/icon/100', sizes: '100x100', type: 'image/png' },
+      { url: '/icon/96', sizes: '96x96', type: 'image/png' },
     ],
     apple: [
       { url: '/600x600.jpg' },

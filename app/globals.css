@@ -103,6 +103,9 @@
     label {
       @apply text-brand-blue-200;
     }
+    main {
+      @apply border-2 border-brand-blue-900
+    }
   }
 }
 

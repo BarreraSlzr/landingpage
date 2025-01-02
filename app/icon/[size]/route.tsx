@@ -16,7 +16,7 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
           alignItems: 'center',
           justifyContent: 'center',
           fontSize: `${size / 2}px`,
-          fontWeight: 'bold',
+          fontWeight: 'bolder',
           color: 'white',
         }}
       >
