@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { useRef } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 const START_DATE_OPTIONS = [
     'As soon as possible',
@@ -25,6 +26,7 @@ const BUDGET_OPTIONS = [
 
 export function ContactForm() {
     const formRef = useRef<HTMLFormElement>(null);
+    const searchParams = useSearchParams()
 
     async function handleSubmit(formData: FormData) {
         const result = await submitContactForm(formData);
@@ -47,6 +49,7 @@ export function ContactForm() {
                         name="first_name"
                         autoComplete="given-name"
                         required
+                        defaultValue={searchParams.get('first_name') || ''}
                         className="bg-transparent border-b border-brand-blue-800 rounded-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-brand-blue-100"
                     />
                 </div>
@@ -60,6 +63,7 @@ export function ContactForm() {
                         name="last_name"
                         autoComplete="family-name"
                         required
+                        defaultValue={searchParams.get('last_name') || ''}
                         className="bg-transparent border-b border-brand-blue-800 rounded-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-brand-blue-100"
                     />
                 </div>
@@ -76,6 +80,7 @@ export function ContactForm() {
                         name="company_name"
                         autoComplete="organization"
                         required
+                        defaultValue={searchParams.get('company_name') || ''}
                         className="bg-transparent border-b border-brand-blue-800 rounded-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-brand-blue-100"
                     />
                 </div>
@@ -89,6 +94,7 @@ export function ContactForm() {
                         name="email"
                         autoComplete="email"
                         required
+                        defaultValue={searchParams.get('email') || ''}
                         className="bg-transparent border-b border-brand-blue-800 rounded-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-brand-blue-100"
                     />
                 </div>
@@ -103,7 +109,7 @@ export function ContactForm() {
                         name="project_start_date"
                         aria-label="Estimated Project Start Date"
                         required
-                        defaultValue={START_DATE_OPTIONS[0]}
+                        defaultValue={searchParams.get('project_start_date') || START_DATE_OPTIONS[0]}
                     >
                         <SelectTrigger className="bg-transparent border-b border-brand-blue-800 rounded-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-brand-blue-100">
                             <SelectValue />
@@ -125,7 +131,7 @@ export function ContactForm() {
                         name="budget"
                         aria-label="Budget"
                         required
-                        defaultValue={BUDGET_OPTIONS[1]}
+                        defaultValue={searchParams.get('budget') || BUDGET_OPTIONS[1]}
                     >
                         <SelectTrigger className="bg-transparent border-b border-brand-blue-800 rounded-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-brand-blue-100">
                             <SelectValue />
@@ -150,6 +156,7 @@ export function ContactForm() {
                     name="project_scope"
                     aria-label="Project Scope Description"
                     required
+                    defaultValue={searchParams.get('project_scope') || ''}
                     rows={6}
                     maxLength={2000}
                     className="bg-transparent border border-brand-blue-800 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-brand-blue-100 resize-none rounded-none"

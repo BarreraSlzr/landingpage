@@ -16,5 +16,5 @@ export async function setupDatabase() {
 
 
 export async function register() {
-
+    setupDatabase()
 }

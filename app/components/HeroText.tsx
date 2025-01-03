@@ -16,9 +16,9 @@ type Props = {
     className?: string,
 }
 
-export default function HeroText({ children = <DefaultHero /> }: PropsWithChildren<Props>) {
+export default function HeroText({ children = <DefaultHero />, className }: PropsWithChildren<Props>) {
     return (
-        <section className={`relative min-h-[60vh]`}>
+        <section className={`relative min-h-[60vh] ${className}`}>
             <NoiseFilterDiv/>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}

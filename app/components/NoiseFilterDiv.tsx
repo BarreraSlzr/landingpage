@@ -1,3 +1,4 @@
+import { GridBackground } from '@/components/grid-background';
 import { CSSProperties } from 'react';
 
 interface Props {
@@ -21,6 +22,8 @@ export default function NoiseFilterDiv({
         `,
           backgroundBlendMode: overlayBlendMode,
         }}
-      />
+      >
+        <GridBackground/>
+      </div>
   );
 }
