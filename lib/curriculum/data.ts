@@ -106,6 +106,12 @@ export const curriculum: CVData = {
         { title: 'LinkedIn', url: 'https://www.linkedin.com/in/barreraslzr/', icon: 'linkedin' },
         { title: 'GitHub', url: 'https://github.com/barreraslzr', icon: 'github' },
         { title: 'WhatsApp', url: 'https://wa.me/+523311654324', icon: 'whatsapp' }
-      ]
+      ],
+      height: "178 cm",
+      sex: "Male",
+      nationality: "Mexican",
+      location: "Worldwide - Remote",
+      localTime: "America/Mexico_City",
+      availability: "Partial Availability"
     }
   };

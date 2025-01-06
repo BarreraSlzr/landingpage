@@ -33,6 +33,12 @@ export interface ContactInfo {
   timezone: string;
   isOnline: boolean
   urls: URL[];
+  height: string;
+  sex: string;
+  nationality: string;
+  location: string;
+  localTime: string;
+  availability: string
 }
 
 export interface CVData {

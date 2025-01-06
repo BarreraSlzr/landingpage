@@ -1,6 +1,7 @@
 import { headers } from 'next/headers';
 import content from '../content.json';
 import { latinAmericanCountries } from '@/lib/latinAmericanCountries';
+import { Availability } from './Availability';
 
 export default async function CompanyInfo() {
   const headersList = await headers()
@@ -10,11 +11,12 @@ export default async function CompanyInfo() {
   : content.companyInfo.address2
 
   return (
-    <section className="sm:px-6 px-2 md:px-8 pb-12 pt-2">
+    <section className="sm:px-6 px-2 md:px-8 pb-2 pt-2">
       <div className="flex flex-col">
         <h1 className="text-lg font-medium h-5">{content.companyInfo.title}</h1>
         <p>{content.companyInfo.address1}</p>
         <p>{address}</p>
+        <Availability className='pt-12'/>
       </div>
     </section>
   );
