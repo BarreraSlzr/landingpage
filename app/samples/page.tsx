@@ -32,7 +32,7 @@ const projects = [
     }, 
     {
         title: 'Curriculum Vitae', 
-        href: 'https://barreraslzr.internetfriends.xyz/',
+        href: 'https://barreraslzr.internetfriends.xyz/old',
         description: 'Website'
     }, 
     {
