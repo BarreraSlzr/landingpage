@@ -1,4 +1,4 @@
-import { createContactSubmissionsTable } from "./db/init/contact_submissions";
+import { createContactSubmissionsTable } from "./app/(internetfriends)/lib/db/init/contact_submissions";
 
 export async function setupDatabase() {
     console.log('Starting database setup...');

@@ -1,4 +1,4 @@
-import content from '@/app/content.json';
+import content from '@/app/(internetfriends)/content.json';
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {

@@ -1,11 +1,11 @@
 import { ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
-import Header from './components/Header';
-import MainNavigation from './components/MainNavigation';
-import SocialLinks from './components/SocialLinks';
-import HeroText from './components/HeroText';
-import CompanyInfo from './components/CompanyInfo';
+import Header from './(internetfriends)/components/header';
+import Navigation from './(internetfriends)/components/navigation';
+import SocialLinks from './(internetfriends)/components/social-links';
+import HeroText from './(internetfriends)/components/hero-text';
+import CompanyInfo from './(internetfriends)/components/company-info';
 
 
 const messages = [
@@ -67,7 +67,7 @@ export default function NotFoundPage() {
       </HeroText>
 
       {/* Main Navigation */}
-      <MainNavigation/>
+      <Navigation/>
 
       {/* Social Links */}
       <SocialLinks/>

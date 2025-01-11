@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Suspense } from "react";
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import content from './content.json'
-import { Suspense } from "react";
+import "@/app/(internetfriends)/globals.css";
+import GoogleAnalytics from "@/app/(internetfriends)/components/google-analytics";
+import content from '@/app/(internetfriends)/content.json'
 
 
 const geistSans = Geist({
@@ -109,7 +109,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}>
+        className={`${geistSans.variable} ${geistMono.variable}`}>
         <Suspense fallback='Loading'>
           {children}
           <SpeedInsights/>
