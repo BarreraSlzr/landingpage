@@ -26,7 +26,7 @@ export default function HeroText({ children = <DefaultHero />, className }: Prop
             <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
                 <NoiseFilter className='opacity-16 mix-blend-hue'/>
                 <BgGoo
-                    speed={0.2}
+                    speed={0.3}
                     resolution={2.0}
                     depth={2}
                     seed={0.4}
