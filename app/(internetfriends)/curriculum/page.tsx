@@ -15,14 +15,14 @@ export default function Page() {
                 <h1 className="text-5xl font-bold sm:pb-6 pb-4 md:pb-8">
                     {content.curriculum.title}
                 </h1>
+                <div className="bg-foreground text-brand-blue-100">
+                    <div className="sm:px-6 px-2 md:px-8 py-12 pt-6">
+                        <ProfileCard />
+                    </div>
+                </div>
             </HeroText>
             <Navigation />
             <SocialLinks />
-            <div className="border-2 border-t-0 rounded-b border-brand-blue-800 bg-foreground">
-                <div className="sm:px-6 px-2 md:px-8 py-12 pt-6">
-                    <ProfileCard/>
-                </div>
-            </div>
             <CompanyInfo />
         </main>
     );
