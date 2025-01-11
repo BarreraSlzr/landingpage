@@ -24,7 +24,7 @@ export default function HeroText({ children = <DefaultHero />, className }: Prop
     return (
         <section className={`relative min-h-[60vh] ${className}`}>
             <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
-                <NoiseFilter className='opacity-16 mix-blend-hue'/>
+                <NoiseFilter className='mix-blend-hue'/>
                 <BgGoo
                     speed={0.3}
                     resolution={2.0}

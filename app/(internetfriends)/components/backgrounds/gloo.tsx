@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { effectFunctions } from './gloo-effects'
 import useRafInterval from '../../hooks/use-rafaga-interval'
+import { motion } from 'framer-motion'
 
 // Simple implementation of useReducedMotion
 function useReducedMotion() {
@@ -202,14 +203,20 @@ export function BgGoo({
   }, inView ? 1000 / 60 : undefined);
 
   return (
-    <div ref={containerRef} className="w-full h-full">
+    <motion.div
+      ref={containerRef}
+      className="w-full h-full"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       <canvas
         ref={canvasRef}
         width={size.width}
         height={size.height}
         className="w-full h-full"
-      />
-    </div>
+        />
+    </motion.div>
   )
 }
 
